@@ -6,20 +6,40 @@
     </title>
     <style>
       body {
-        padding: 50px;
+        margin: 0;
+        padding: 40px 0 0 0; /* Added padding at the top */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center; /* Centered horizontally */
+        align-items: flex-start; /* Changed to align at the top */
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Changed to left align */
+        text-align: left; /* Changed to left align */
+      }
+      img {
+        margin-bottom: 4px; /* Added some space between elements */
+      }
+      p {
+        margin-bottom: 0px; /* Added some space between elements */
+      }
+      a {
+        margin-top: 20px; /* Added some space between elements */
       }
     </style>
   </head>
   <body>
-    <img src="thedock.png" alt="the Dock_" width="200"/>
-    <p>
-      A community of Toronto-based engineers, entrepreneurs, and builders. 
-      <br>
-      <br>
-      Co-working, grants, hackathons, etc.
-      <br>
-      <br>
+    <div class="container">
+      <img src="thedock.png" alt="the Dock_" width="200"/>
+      <p>
+        A community of Toronto-based engineers, entrepreneurs, and builders.
+      </p>
+      <p>
+        Co-working, grants, hackathons, etc.
+      </p>
       <a href="">Apply to join</a>
-    </p>
+    </div>
   </body>
 </html>
